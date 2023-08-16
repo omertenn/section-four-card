@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100%;
+    text-align: center;
+    padding: 5rem 2rem 0;
+    color:  hsl(229, 6%, 66%);
+}
+
+main{
+    margin: auto;
+}
+
+.header{
+    text-align: center;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.cards > p{
+    color: #fff;
+}
+
+.h1{
+    font-weight: 200;
+}
+
+.h1, h2{
+    font-size: 1.5rem;
+}
+
+.h1, h2, h3{
+    color: hsl(234, 12%, 34%);
+}
+
+.h3{
+    font-size: 1.3rem;
+}
+
+.header> p {
+    padding: 1em 0 2.5em;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0.5em 1.5em black;
+    border-radius: 0.5em;
+    padding: 1.5em 2em 2em;
+    align-items: flex-start;
+    margin: 1.75em 0;
+}
+
+.cards> p {
+    font-size: 0.8rem;
+    text-align: left;
+    padding-bottom: 3em;
+}
+
+img{
+    align-self: flex-end;
+}
+
+.supervisor {
+    border-top: .50em solid hsl(180, 62%, 55%);
+    background-color:gray;
+}
+
+.Team-Builder {
+    border-top: .50em solid red;
+    background-color:gray;
+}
+
+.Karma{
+    border-top: .50em solid orange;
+    background-color:gray;
+}
+
+.Calculator {
+    border-top: .50em solid blue;
+    background-color:gray;
+}
+
+.attribution{
+   font-size: 1rem;
+   text-align: center;
+   margin-bottom: 1em;
+   margin-top: 14em;
+}
+
+.attribution a {
+    color: hsl(234, 12%, 34%);
+}
+
+@media screen and (min-width: 650px) {
+    body {
+        padding: 0;
+    }
+    main {
+        width: 90%;
+        max-width: 1100px;
+    }
+    .header {
+        max-width: 575px;
+        margin: 0 auto;
+    }
+    h1, h2 {
+        font-size: 2.15rem;
+    }
+    section {
+        display: flex;
+        gap: 1.75rem;
+        align-items: center;
+    }
+    section> *{
+        flex-basis: calc(100% / 3);
+    }
+}
